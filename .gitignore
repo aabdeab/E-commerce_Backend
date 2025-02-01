@@ -1,0 +1,49 @@
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+out/
+.idea_modules/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/libraries/
+
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+### Logs ###
+logs/
+*.log
+*.log.*
+
+### Dependency Directories ###
+/node_modules/
+/target/
+/out/
+/bin/
+/build/
+
+### Java ###
+*.class
+*.war
+*.jar
+
+### Spring Boot ###
+/.env
+/.env.local
+/.env.*.local
+*.pid
+*.seed
+
+### OS-specific ###
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+### Other ###
+.vscode/
+*.swp
