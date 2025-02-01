@@ -2,7 +2,7 @@
 
 
 ## 📌 Overview  
-This project is a **scalable, secure, and high-performance** backend architecture for an e-commerce platform. Built with a **microservices-based** approach, it ensures **modularity, flexibility, and fault tolerance**, making it ideal for real-world production use.
+This project is a **scalable, secure, and high-performance** backend architecture for an e-commerce platform. Built with a **microservices-based** approach, it ensures **modularity, flexibility, and fault tolerance**, it's made with **Spring** and **Gradle**  .
 
 ## 🚀 Features  
 ✅ **Microservices-based architecture** (Scalable & Maintainable)  
