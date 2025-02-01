@@ -1,0 +1,20 @@
+plugins {
+	id 'java'
+}
+repositories {
+	mavenCentral() // Ou tout autre dépôt pertinent
+}
+ext {
+	springBootVersion = '2.5.2'
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+	implementation project(':API')
+	// Lombok
+	compileOnly 'org.projectlombok:lombok:1.18.30' // Ajout pour le build
+	annotationProcessor 'org.projectlombok:lombok:1.18.30' // Ajout pour les annotat
+}

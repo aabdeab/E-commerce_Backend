@@ -1,0 +1,6 @@
+rootProject.name = 'product-service'
+include ':API'
+project(':API').projectDir = file('../../API')
+include ':Utils'
+project(':Utils').projectDir = file('../../Utils')
+

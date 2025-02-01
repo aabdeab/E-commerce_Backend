@@ -1,0 +1,8 @@
+rootProject.name = 'recommendation-service'
+include ':API'
+project(':API').projectDir = file('../../API')
+include ':Utils'
+project(':Utils').projectDir = file('../../Utils')
+
+include ':microservices:recommendation-service'
+project(':microservices:recommendation-service').projectDir = file('microservices/recommendation-service')

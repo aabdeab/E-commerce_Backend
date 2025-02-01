@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/API" />
+            <option value="$PROJECT_DIR$/Utils" />
+            <option value="$PROJECT_DIR$/microservices" />
+            <option value="$PROJECT_DIR$/microservices/product-service" />
+            <option value="$PROJECT_DIR$/microservices/product-service-composite" />
+            <option value="$PROJECT_DIR$/microservices/recommendation-service" />
+            <option value="$PROJECT_DIR$/microservices/review-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices/product-service" />
+        <option name="gradleJvm" value="17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/API" />
+            <option value="$PROJECT_DIR$/Utils" />
+            <option value="$PROJECT_DIR$/microservices/product-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices/product-service-composite" />
+        <option name="gradleJvm" value="17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/API" />
+            <option value="$PROJECT_DIR$/Utils" />
+            <option value="$PROJECT_DIR$/microservices/product-service-composite" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices/recommendation-service" />
+        <option name="gradleJvm" value="17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/API" />
+            <option value="$PROJECT_DIR$/Utils" />
+            <option value="$PROJECT_DIR$/microservices/recommendation-service" />
+            <option value="$PROJECT_DIR$/microservices/recommendation-service/microservices" />
+            <option value="$PROJECT_DIR$/microservices/recommendation-service/microservices/recommendation-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices/review-service" />
+        <option name="gradleJvm" value="17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/API" />
+            <option value="$PROJECT_DIR$/Utils" />
+            <option value="$PROJECT_DIR$/microservices/review-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

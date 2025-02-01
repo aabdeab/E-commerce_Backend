@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/API/Basic-Rest-services.API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/API/Basic-Rest-services.API.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Utils/Basic-Rest-services.Utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Utils/Basic-Rest-services.Utils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservices/product-service-composite/Basic-Rest-services.microservices.product-service-composite.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservices/product-service-composite/Basic-Rest-services.microservices.product-service-composite.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservices/product-service/Basic-Rest-services.microservices.product-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservices/product-service/Basic-Rest-services.microservices.product-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservices/recommendation-service/Basic-Rest-services.microservices.recommendation-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservices/recommendation-service/Basic-Rest-services.microservices.recommendation-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservices/review-service/Basic-Rest-services.microservices.review-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservices/review-service/Basic-Rest-services.microservices.review-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1418035138/product-service-composite.API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1418035138/product-service-composite.API.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1245727833/product-service-composite.Utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1245727833/product-service-composite.Utils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1418035138/product-service.API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1418035138/product-service.API.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1245727833/product-service.Utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1245727833/product-service.Utils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1418035138/recommendation-service.API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1418035138/recommendation-service.API.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1418035138/recommendation-service.API.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1418035138/recommendation-service.API.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1245727833/recommendation-service.Utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1245727833/recommendation-service.Utils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1418035138/review-service.API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1418035138/review-service.API.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1245727833/review-service.Utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1245727833/review-service.Utils.main.iml" />
+    </modules>
+  </component>
+</project>
