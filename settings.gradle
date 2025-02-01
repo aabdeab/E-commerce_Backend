@@ -1,2 +1,5 @@
 rootProject.name = 'Basic-Rest-services'
 include ':API', ':Utils', ':microservices:product-service', ':microservices:product-service-composite', ':microservices:recommendation-service', ':microservices:review-service'
+include 'APIGateway'
+
+

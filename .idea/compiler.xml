@@ -22,6 +22,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="APIGateway" target="17" />
+      <module name="Basic-Rest-services.APPIGateway.main" target="17" />
+      <module name="Basic-Rest-services.APPIGateway.test" target="17" />
+      <module name="Basic-Rest-services.untitled.main" target="17" />
+      <module name="Basic-Rest-services.untitled.test" target="17" />
       <module name="com.example.demo" target="17" />
       <module name="com.example.demo.main" target="17" />
       <module name="com.example.demo.test" target="17" />
