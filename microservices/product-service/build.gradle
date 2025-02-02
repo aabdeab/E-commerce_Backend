@@ -1,11 +1,11 @@
 plugins {
-	id 'org.springframework.boot' version '3.1.4' // Assurez-vous de spécifier la version correcte du plugin
+	id 'org.springframework.boot' version '3.1.4'
 	id 'io.spring.dependency-management' version '1.1.3'
 	id 'java'
 }
 
 repositories {
-	mavenCentral() // Déclarez Maven Central comme repository pour récupérer les dépendances
+	mavenCentral()
 }
 jar {
 	enabled = false
@@ -24,12 +24,11 @@ dependencies {
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
-	// Lombok
-	compileOnly 'org.projectlombok:lombok:1.18.30' // Ajout pour le build
-	annotationProcessor 'org.projectlombok:lombok:1.18.30' // Ajout pour les annotations
+	compileOnly 'org.projectlombok:lombok:1.18.30'
+	annotationProcessor 'org.projectlombok:lombok:1.18.30'
 }
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_17  // Remplacez par votre version de Java
+	sourceCompatibility = JavaVersion.VERSION_17
 	targetCompatibility = JavaVersion.VERSION_17
 }
