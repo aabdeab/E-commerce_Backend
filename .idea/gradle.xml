@@ -50,8 +50,6 @@
             <option value="$PROJECT_DIR$/API" />
             <option value="$PROJECT_DIR$/Utils" />
             <option value="$PROJECT_DIR$/microservices/recommendation-service" />
-            <option value="$PROJECT_DIR$/microservices/recommendation-service/microservices" />
-            <option value="$PROJECT_DIR$/microservices/recommendation-service/microservices/recommendation-service" />
           </set>
         </option>
       </GradleProjectSettings>

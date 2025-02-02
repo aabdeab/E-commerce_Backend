@@ -9,18 +9,13 @@ repositories {
 }
 
 dependencies {
-	// 1. Déclarer le BOM EN PREMIER
 	implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
 
-	// 2. Dépendances Spring Boot (sans version)
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-	// 3. Lombok (version gérée par le BOM)
 	compileOnly 'org.projectlombok:lombok:1.18.24' // Version stable
 	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 
-	// 4. Dépendances externes (si nécessaire)
-	// implementation 'com.example:library:1.0.0'
 }

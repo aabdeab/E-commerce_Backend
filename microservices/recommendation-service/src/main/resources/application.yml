@@ -4,3 +4,6 @@ logging:
   level:
     root: INFO
     com.example.demo: DEBUG
+---
+spring.config.activate.on-profile: docker
+server.port: 8082

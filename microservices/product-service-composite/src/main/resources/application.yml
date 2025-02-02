@@ -20,3 +20,4 @@ logging:
 
 ---
 spring.config.activate.on-profile: docker
+server.port: 8080
