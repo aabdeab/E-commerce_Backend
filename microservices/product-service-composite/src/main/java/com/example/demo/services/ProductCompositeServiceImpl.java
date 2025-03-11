@@ -1,9 +1,6 @@
 package com.example.demo.services;
 
-import com.example.api.compositeProduct.ProductAggregate;
-import com.example.api.compositeProduct.ProductCompositeService;
-import com.example.api.compositeProduct.RecommendationSummary;
-import com.example.api.compositeProduct.ReviewSummary;
+import com.example.api.compositeProduct.*;
 import com.example.api.core.product.Product;
 import com.example.demo.ServiceUtil;
 import org.springframework.http.HttpStatus;
@@ -25,7 +22,6 @@ public class ProductCompositeServiceImpl implements ProductCompositeService {
         this.integration = integration;
         this.serviceUtil = serviceUtil;
     }
-
     @Override
     @GetMapping(
             value = "/product-composite/{productId}",
@@ -61,6 +57,10 @@ public class ProductCompositeServiceImpl implements ProductCompositeService {
                                         review.getSubject()))
                                 .collect(Collectors.toList()) :
                         Collections.emptyList();
+        ///
+        ServiceAddresses serviceAddresses = ServiceAddresses.builder()
+                .productAddress(product.)
+                .recommendationAddress(rev)
 
         return ProductAggregate.builder()
                 .productId(productId)
@@ -68,6 +68,8 @@ public class ProductCompositeServiceImpl implements ProductCompositeService {
                 .name(product.getName())
                 .recommendations(recommendationSummaries)
                 .reviews(reviewSummaries)
+                .serviceAddresses()
                 .build();
     }
+
 }

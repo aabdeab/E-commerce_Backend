@@ -34,7 +34,6 @@ public class ProductCompositeIntegration {
     ) {
         this.restTemplate = restTemplate;
         this.mapper = mapper;
-
         this.productServiceUrl = "http://" + productServiceHost + ":" + productServicePort + "/products/";
         this.recommendationServiceUrl = "http://" + recommendationServiceHost + ":" + recommendationServicePort + "/recommendations?productID=";
         this.reviewServiceUrl = "http://" + reviewServiceHost + ":" + reviewServicePort + "/reviews?productID=";
@@ -44,7 +43,6 @@ public class ProductCompositeIntegration {
         String url = productServiceUrl + productId;
         return restTemplate.getForObject(url, Product.class);
     }
-
     public List<Recommendation> getRecommendations(int productId) {
         String url = recommendationServiceUrl + productId;
         try {
@@ -53,7 +51,6 @@ public class ProductCompositeIntegration {
             return handleHttpClientErrorException(ex);
         }
     }
-
     public List<Review> getReviews(int productId) {
         String url = reviewServiceUrl + productId;
         try {
@@ -62,7 +59,6 @@ public class ProductCompositeIntegration {
             return handleHttpClientErrorException(ex);
         }
     }
-
     private <T> T handleHttpClientErrorException(HttpClientErrorException ex) {
         return null; // À améliorer avec des exceptions spécifiques
     }

@@ -23,6 +23,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="APIGateway" target="17" />
+      <module name="Basic-Rest-services.APIGateway.main" target="17" />
+      <module name="Basic-Rest-services.APIGateway.test" target="17" />
       <module name="Basic-Rest-services.APPIGateway.main" target="17" />
       <module name="Basic-Rest-services.APPIGateway.test" target="17" />
       <module name="Basic-Rest-services.untitled.main" target="17" />

@@ -16,7 +16,7 @@ app:
 logging:
   level:
     root: INFO
-    se.magnus: DEBUG
+    com.example.demo: DEBUG
 
 ---
 spring.config.activate.on-profile: docker
