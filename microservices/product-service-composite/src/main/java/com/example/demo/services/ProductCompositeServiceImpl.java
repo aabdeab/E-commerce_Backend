@@ -57,10 +57,7 @@ public class ProductCompositeServiceImpl implements ProductCompositeService {
                                         review.getSubject()))
                                 .collect(Collectors.toList()) :
                         Collections.emptyList();
-        ///
-        ServiceAddresses serviceAddresses = ServiceAddresses.builder()
-                .productAddress(product.)
-                .recommendationAddress(rev)
+
 
         return ProductAggregate.builder()
                 .productId(productId)
@@ -68,7 +65,6 @@ public class ProductCompositeServiceImpl implements ProductCompositeService {
                 .name(product.getName())
                 .recommendations(recommendationSummaries)
                 .reviews(reviewSummaries)
-                .serviceAddresses()
                 .build();
     }
 
