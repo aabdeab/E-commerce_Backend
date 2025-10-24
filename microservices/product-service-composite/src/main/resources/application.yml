@@ -13,11 +13,47 @@ app:
     host: localhost
     port: 7003
 
+spring.cloud.stream:
+  defaultBinder: kafka
+  default.contentType: application/json
+  bindings:
+    products-out-0:
+      destination: products
+      producer:
+        required-groups: auditGroup
+    recommendations-out-0:
+      destination: recommendations
+      producer:
+        required-groups: auditGroup
+    reviews-out-0:
+      destination: reviews
+      producer:
+        required-groups: auditGroup
+
+spring.cloud.stream.kafka.binder:
+  brokers: 127.0.0.1
+  defaultBrokerPort: 9092
+
 logging:
   level:
     root: INFO
     com.example.demo: DEBUG
+    org.springframework.cloud.stream: DEBUG
 
 ---
 spring.config.activate.on-profile: docker
 server.port: 8080
+
+app:
+  product-service:
+    host: product-service
+    port: 8081
+  recommendation-service:
+    host: recommendation-service
+    port: 8082
+  review-service:
+    host: review-service
+    port: 8083
+
+spring.cloud.stream.kafka.binder:
+  brokers: kafka

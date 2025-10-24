@@ -7,7 +7,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/product")
 public class ProductController {
     private final ProductServiceImpl productService;
 
@@ -15,9 +15,9 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @GetMapping("/{productID}")
-    public Mono<Product> getProduct(@PathVariable Integer productID) {
-        return productService.getProduct(productID);
+    @GetMapping("/{productId}")
+    public Mono<Product> getProduct(@PathVariable Integer productId) {
+        return productService.getProduct(productId);
     }
 
     @GetMapping

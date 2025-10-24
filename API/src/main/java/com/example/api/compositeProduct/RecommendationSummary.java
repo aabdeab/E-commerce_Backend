@@ -1,15 +1,50 @@
 package com.example.api.compositeProduct;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-
-@AllArgsConstructor
-@Data
-@Builder
 public class RecommendationSummary {
-    private final int recommandationId;
-    private final String author;
-    private final int rate;
+    private int recommendationId;
+    private String author;
+    private int rate;
+    private String content;
+
+    public RecommendationSummary() {
+    }
+
+    public RecommendationSummary(int recommendationId, String author, int rate, String content) {
+        this.recommendationId = recommendationId;
+        this.author = author;
+        this.rate = rate;
+        this.content = content;
+    }
+
+    public int getRecommendationId() {
+        return recommendationId;
+    }
+
+    public void setRecommendationId(int recommendationId) {
+        this.recommendationId = recommendationId;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getRate() {
+        return rate;
+    }
+
+    public void setRate(int rate) {
+        this.rate = rate;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
 }

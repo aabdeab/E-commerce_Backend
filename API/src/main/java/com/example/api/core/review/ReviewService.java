@@ -1,12 +1,14 @@
 package com.example.api.core.review;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.List;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 public interface ReviewService {
-      @GetMapping(value="/review",produces = "application/json")
-      public List<Review> getReviews(int productId);
+    Mono<Review> createReview(Review body);
+
+    @GetMapping(value="/review",produces = "application/json")
+    Flux<Review> getReviews(int productId);
+
+    Mono<Void> deleteReviews(int productId);
 }

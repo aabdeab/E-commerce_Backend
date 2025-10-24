@@ -1,9 +1,24 @@
 server.port: 7002
 
+spring.cloud.stream:
+  defaultBinder: kafka
+  default.contentType: application/json
+  bindings.messageProcessor-in-0:
+    destination: recommendations
+    group: recommendationsGroup
+
+spring.cloud.stream.kafka.binder:
+  brokers: 127.0.0.1
+  defaultBrokerPort: 9092
+
 logging:
   level:
     root: INFO
     com.example.demo: DEBUG
+    org.springframework.cloud.stream: DEBUG
+
 ---
 spring.config.activate.on-profile: docker
 server.port: 8082
+
+spring.cloud.stream.kafka.binder.brokers: kafka

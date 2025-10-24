@@ -4,6 +4,10 @@ plugins {
 	id 'java'
 }
 
+ext {
+	springCloudVersion = '2022.0.4'
+}
+
 repositories {
 	mavenCentral()
 }
@@ -22,10 +26,24 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
+	// Spring Cloud Stream with Kafka
+	implementation 'org.springframework.cloud:spring-cloud-starter-stream-kafka'
+
+	// Jackson for JSON serialization
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
+	testImplementation 'org.springframework.cloud:spring-cloud-stream-test-binder'
+
 	compileOnly 'org.projectlombok:lombok:1.18.30'
 	annotationProcessor 'org.projectlombok:lombok:1.18.30'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
 }
 
 java {

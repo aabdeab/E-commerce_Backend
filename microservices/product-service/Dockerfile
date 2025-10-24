@@ -1,13 +1,22 @@
-FROM eclipse-temurin:17-jdk-alpine AS builder
-WORKDIR /extracted
-COPY build/libs/*.jar app.jar
-RUN java -Djarmode=layertools -jar app.jar extract
+# Build stage
+FROM gradle:8.4-jdk17 AS build
+WORKDIR /app
+
+# Copy all project files
+COPY . .
+
+# Build the specific microservice
+RUN gradle :microservices:product-service:build -x test --no-daemon
+
+# Runtime stage
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
-COPY --from=builder /extracted/dependencies/ ./
-COPY --from=builder /extracted/spring-boot-loader/ ./
-COPY --from=builder /extracted/snapshot-dependencies/ ./
-COPY --from=builder /extracted/application/ ./
-ENV SERVER_PORT=8081
-EXPOSE $SERVER_PORT
-ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
+
+# Copy the built jar
+COPY --from=build /app/microservices/product-service/build/libs/*.jar app.jar
+
+# Expose port
+EXPOSE 8081
+
+# Run the application
+ENTRYPOINT ["java", "-jar", "app.jar"]
