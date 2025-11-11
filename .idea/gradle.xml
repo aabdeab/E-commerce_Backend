@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$/API" />
             <option value="$PROJECT_DIR$/APIGateway" />
             <option value="$PROJECT_DIR$/Infra" />
+            <option value="$PROJECT_DIR$/Infra/AutorizationServer" />
+            <option value="$PROJECT_DIR$/Infra/Gateway" />
             <option value="$PROJECT_DIR$/Utils" />
             <option value="$PROJECT_DIR$/microservices" />
             <option value="$PROJECT_DIR$/microservices/product-service" />
