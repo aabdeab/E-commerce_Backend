@@ -4,10 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/API/Basic-Rest-services.API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/API/Basic-Rest-services.API.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Utils/Basic-Rest-services.Utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Utils/Basic-Rest-services.Utils.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservices/product-service-composite/Basic-Rest-services.microservices.product-service-composite.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservices/product-service-composite/Basic-Rest-services.microservices.product-service-composite.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservices/product-service/Basic-Rest-services.microservices.product-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservices/product-service/Basic-Rest-services.microservices.product-service.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservices/recommendation-service/Basic-Rest-services.microservices.recommendation-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservices/recommendation-service/Basic-Rest-services.microservices.recommendation-service.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservices/review-service/Basic-Rest-services.microservices.review-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservices/review-service/Basic-Rest-services.microservices.review-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1418035138/product-service-composite.API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1418035138/product-service-composite.API.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1245727833/product-service-composite.Utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1245727833/product-service-composite.Utils.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1418035138/product-service.API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1418035138/product-service.API.main.iml" />

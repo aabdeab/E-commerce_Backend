@@ -1,7 +1,10 @@
 package com.example.api.compositeProduct;
 
+import lombok.Builder;
+
 import java.util.List;
 
+@Builder
 public class ProductAggregate {
     private int productId;
     private String name;
